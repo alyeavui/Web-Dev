@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table, th, td {
+    border:1px solid black;
+    }
+    th {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    }
+    tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+    }
+    th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+    }
+</style>
+<body>
+<table style="width:100%">
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+<table>
+    <tr>
+      <th>Name</th>
+      <td>Jill</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Phone</th>
+      <td>555-1234</td>
+    </tr>
+    <tr>
+      <td>555-8745</td>
+  </tr>
+  </table>
+
+</body>
+</html>
