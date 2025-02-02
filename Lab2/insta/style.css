@@ -1,0 +1,100 @@
+body {
+    background-color: #fafafa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button {
+    cursor: pointer;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+article {
+    display: grid;
+    gap: 10px;
+}
+.login-page__login {
+    display: grid;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.login-page__login input
+{
+    width: 310px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #f1f1f19f;
+}
+.login-page__login button{
+    color: #FFFFFF;
+    background-color: #177af24d;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type=text]:focus,input[type=password]:focus, textarea:focus {
+    box-shadow: 0 0 2px #1778F2;
+    border: 1px solid #1778F2;
+}
+.instagram__wrote{
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.login__or {
+    font-weight: 600;
+    color: #818181;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.login-page__login div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.login-page__login a{
+    font-weight: bold;
+    color: #385185;
+}
+.login-page__reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.login-page__reg a {
+    font-weight: bold;
+    color: #1778F2;
+}
+
+.login-page__downloadApp{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+footer{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 70px;
+    padding-bottom: 30px;
+}
+footer p, footer p a{
+    font-size: 12px;
+    color: #818181;
+}
