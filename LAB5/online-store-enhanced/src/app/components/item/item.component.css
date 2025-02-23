@@ -1,0 +1,118 @@
+.item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.7em;
+  width: 300px;
+  height: 340px;
+  margin: 1.5rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.img {
+  width: 90%;
+  height: 40%;
+  margin-bottom: 1em;
+}
+img {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  max-width: 15em;
+  max-height: 11em;
+  object-fit: contain;
+  cursor: pointer;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 35%;
+  padding: 0.5em;
+  margin-top: 5px;
+}
+.title {
+  font-size: 1em;
+  padding-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.title:hover {
+  text-decoration: underline;
+}
+.description {
+  font-size: 0.7em;
+  margin-bottom: -0.8em;
+}
+.details {
+  padding-top: 5px;
+}
+p {
+  font-size: 0.85em;
+}
+
+span {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.buttons {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  transition: all 0.2s ease-in-out;
+}
+button {
+  font-size: 0.95rem;
+  margin-top: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #7fb285;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 70px;
+  height: 30px;
+}
+button:hover {
+  background-color: #608564;
+}
+
+button.like {
+  background-color: #ccc;
+  color: #333;
+}
+
+button.like:hover {
+  background-color: #999;
+}
+
+button.dislike {
+  background-color: #f6f1d1;
+  color: #333;
+}
+
+button.dislike:hover {
+  background-color: #c5c1a3;
+}
+
+button.share {
+  background-color: #b97375;
+}
+
+button.share:hover {
+  background-color: #855557;
+}

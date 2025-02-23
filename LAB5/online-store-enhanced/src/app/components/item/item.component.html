@@ -1,0 +1,40 @@
+<div *ngIf="item" class="item">
+  <div class="img">
+    <img [src]="item.image" [alt]="item.title" (click)="openLink(item.url)" />
+  </div>
+  <div class="info">
+    <p class="title" (click)="openLink(item.url)">{{ item.title }}</p>
+    <p class="description">{{ item.description }}</p>
+    <p class="details">
+      Price:
+      <span>{{ item.price }}&#8376;</span> | Rate:
+      <span>{{ item.rating.rate | number : "1.2-4" }}</span> | Likes:
+      <span>{{ item.likes }}</span>
+    </p>
+  </div>
+  <div class="buttons">
+    <button
+      class="share"
+      (click)="
+        openLink(
+          'https://t.me/share/url?url=' + item.url + '&text=' + item.title
+        )
+      "
+    >
+      Share
+    </button>
+    <div class="removeItem" (click)="removeItem()">
+      <button>Remove</button>
+    </div>
+    <div class="like" (click)="likeItem()">
+      <button
+        [ngClass]="{
+          dislike: !likes,
+          like: likes
+        }"
+      >
+        {{ likes ? "Dislike" : "Like" }}
+      </button>
+    </div>
+  </div>
+</div>
