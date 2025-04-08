@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: rgb(94,29,142);
+  background: linear-gradient(90deg, rgba(94,29,142,1) 0%, rgba(189,109,227,1) 26%, rgba(224,125,255,1) 49%, rgba(202,100,247,1) 74%, rgba(95,21,143,1) 100%);
+}
+    
+header {
+  background-color: #ffffff;
+  color: #7d10d6;
+  padding: 1rem;
+  padding-left: 30px;
+  margin-bottom: 2rem;
+}
+  
+header h1 {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+h2 {
+  color: white;
+  padding-left: 30px;
+}
+
+nav a {
+  color: #7d10d6;;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+  
+.companies {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+  
+.onecompany {
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.onecompany h3 {
+  color: #7d10d6;
+  margin-bottom: 10px;
+}
+  
+.onecompany a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #9f26d3;
+  text-decoration: none;
+}
+
+.companydetail {
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.companyinfo {
+  margin-bottom: 20px;
+}
+  
+.vacancy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.onevacancy {
+  background: #f9f9f9;
+  border-left: 3px solid #7d10d6;
+  padding: 15px;
+  border-radius: 3px;
+}
+  
+.onevacancy h4 {
+  color: #7d10d6;
+  margin-bottom: 10px;
+}

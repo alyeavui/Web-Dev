@@ -1,0 +1,24 @@
+<div class="companydetail" *ngIf="company">
+    <div class="companyinfo">
+      <h2>{{ company.name }}</h2>
+      <p><strong>City:</strong> {{ company.city }}</p>
+      <p><strong>Address:</strong> {{ company.address }}</p>
+      <p><strong>Description:</strong> {{ company.description }}</p>
+    </div>
+  
+    <div class="vacancies">
+      <h3>Vacancies</h3>
+      <div *ngIf="vacancies.length === 0">
+        <p>No vacancies available for this company.</p>
+      </div>
+      <div class="vacancy-list">
+        <div *ngFor="let vacancy of vacancies" class="onevacancy">
+          <h4>{{ vacancy.name }}</h4>
+          <p><strong>Salary:</strong> {{ vacancy.salary | currency }}</p>
+          <p>{{ vacancy.description }}</p>
+        </div>
+      </div>
+    </div>
+    
+    <a routerLink="/companies">Back to companies</a>
+  </div>

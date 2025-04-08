@@ -1,0 +1,11 @@
+<div class="companies-container">
+    <h2>Companies</h2>
+    <div class="companies">
+      <div *ngFor="let company of companies" class="onecompany">
+        <h3>{{ company.name }}</h3>
+        <p>{{ company.city }}</p>
+        <p>{{ company.description }}</p>
+        <a [routerLink]="['/companies', company.id]">View vacancies</a>
+      </div>
+    </div>
+  </div>
